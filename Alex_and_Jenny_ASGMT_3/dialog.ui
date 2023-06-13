@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>395</width>
+    <height>236</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>30</y>
+     <width>301</width>
+     <height>161</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="chart_type_label">
+        <property name="text">
+         <string>Chart Type: </string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="chart_Type_comboBox">
+        <item>
+         <property name="text">
+          <string>Line</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Bar</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Pie</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QLabel" name="data_source_label">
+        <property name="text">
+         <string>Data Source: </string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="data_Source_comboBox">
+        <item>
+         <property name="text">
+          <string>File</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Auto Generate</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QLabel" name="quantity_label">
+        <property name="text">
+         <string>Quantity: </string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="quantity_comboBox">
+        <item>
+         <property name="text">
+          <string>Show Top 10</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Show Top 20</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Show All Words</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <item>
+       <widget class="QPushButton" name="OK_pushButton">
+        <property name="text">
+         <string>Ok</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="Cancel_pushButton_2">
+        <property name="text">
+         <string>Cancel</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>Cancel_pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>282</x>
+     <y>172</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>307</x>
+     <y>208</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
